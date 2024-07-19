@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""update topics where the name == name"""
-import pymongo
+""" Module for using PyMongo """
 
 
 def schools_by_topic(mongo_collection, topic):
-    """update topics where the name == name"""
+    """ Returns the list of school having a specific topic """
     return mongo_collection.find({"topics": topic})
